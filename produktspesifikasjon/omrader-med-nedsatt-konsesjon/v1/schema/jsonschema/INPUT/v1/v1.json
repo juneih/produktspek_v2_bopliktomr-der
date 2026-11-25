@@ -1,0 +1,80 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/v1/v1.json",
+  "definitions": {
+    "Bopliktområde": {
+      "description": "Bopliktområder",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "lokalId": {
+          "description": "lokalId",
+          "type": "string"
+        },
+        "kommunenavn": {
+          "description": "kommunenavn"
+        },
+        "kommunenummer": {
+          "description": "kommunenummer",
+          "type": "string"
+        },
+        "forskriftsreferanse": {
+          "description": "forskriftsreferanse",
+          "type": "string"
+        },
+        "ikrafttredelse": {
+          "description": "ikrafttredelse",
+          "type": "string",
+          "format": "date-time"
+        },
+        "opphevelse": {
+          "description": "opphevelse",
+          "type": "string",
+          "format": "date-time"
+        },
+        "oppdateringsdato": {
+          "description": "oppdateringsdato",
+          "type": "string",
+          "format": "date-time"
+        },
+        "malemetode": {
+          "description": "malemetode",
+          "type": "string"
+        },
+        "gjelderKunDelAvKommunen": {
+          "description": "gjelderKunDelAvKommunen",
+          "type": "boolean"
+        },
+        "gjelderForBruktSomHelarsbolig": {
+          "description": "gjelderForBruktSomHelarsbolig",
+          "type": "boolean"
+        },
+        "gjelderForBoligIkkeTattIBruk": {
+          "description": "gjelderForBoligIkkeTattIBruk",
+          "type": "boolean"
+        },
+        "gjelderForUbebygdBoligtomt": {
+          "description": "gjelderForUbebygdBoligtomt",
+          "type": "boolean"
+        },
+        "harUnntakFraSlektskapsunntak": {
+          "description": "harUnntakFraSlektskapsunntak",
+          "type": "boolean"
+        },
+        "andreLokaleAvgrensninger": {
+          "description": "andreLokaleAvgrensninger",
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    }
+  }
+}

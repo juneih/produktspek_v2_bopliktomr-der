@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><ShapeChangeResult xmlns="http://www.interactive-instruments.de/ShapeChange/Result" xmlns:r="http://www.interactive-instruments.de/ShapeChange/Result" config="/home/runner/work/produktspek_v2_bopliktomr-der/produktspek_v2_bopliktomr-der/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/schema/shapechange-config.xml" end="Wed Nov 25 10:54:31 UTC 2026" resultCode="0" start="Wed Nov 25 10:54:25 UTC 2026" version="4.0.0">
+  <Messages>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: START ----------"/>
+    <Info message="Validating input parameters."/>
+    <Info message="Validation of input parameters completed."/>
+    <Info message="Validating log parameters."/>
+    <Info message="Validation of log parameters completed."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema' and @inputs 'INPUT' ..."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' and @inputs 'INPUT' ..."/>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: COMPLETE ----------"/>
+    <Warning message="The type 'Object' of property 'Bopliktområde.kommunenavn' was not found.">
+      <Detail message="Context: Property 'v1::Bopliktområde::kommunenavn'"/>
+    </Warning>
+    <ProcessFlowInfo message="Application schema found, package name: 'v1', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'XML Schema' for input 'INPUT'."/>
+    <Error message="The type 'Object' of property 'Bopliktområde.kommunenavn' was not found.">
+      <Detail message="Context: Property 'v1::Bopliktområde::kommunenavn'"/>
+    </Error>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+    <ProcessFlowInfo message="Application schema found, package name: 'v1', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'JSON Schema' for input 'INPUT'."/>
+    <Warning message="JSON Schema definition for type 'Object' could not be identified. No map entry is defined for the type, and the type was not found in the model. No type restriction is created for properties with this type as value type."/>
+    <Warning message="Value type 'GM_Object' of primary geometry property 'geometry' is not one of the GeoJSON compatible geometry types defined via target parameter geoJsonCompatibleGeometryTypes. No restriction will be encoded for the &quot;geometry&quot; member.">
+      <Detail message="Context: property 'v1::Bopliktområde::geometry'"/>
+    </Warning>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+  </Messages>
+  <Results>
+    <Result href="file:/home/runner/work/produktspek_v2_bopliktomr-der/produktspek_v2_bopliktomr-der/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/schema/xsd/INPUT/v1.xsd" scope="https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/1.0" target="XML Schema">v1.xsd</Result>
+    <Result href="file:/home/runner/work/produktspek_v2_bopliktomr-der/produktspek_v2_bopliktomr-der/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/schema/jsonschema/INPUT/v1/v1.json" target="JSON Schema">v1.json</Result>
+  </Results>
+</ShapeChangeResult>

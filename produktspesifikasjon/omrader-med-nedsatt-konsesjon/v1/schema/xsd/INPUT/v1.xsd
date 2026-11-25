@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:v1="https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/omrader-med-nedsatt-konsesjon/v1/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Bopliktområde" substitutionGroup="gml:AbstractFeature" type="v1:BopliktområdeType">
+    <annotation>
+      <documentation>Bopliktområder</documentation>
+    </annotation>
+  </element>
+  <complexType name="BopliktområdeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:GeometryPropertyType"/>
+          <element minOccurs="0" name="lokalId" type="string">
+            <annotation>
+              <documentation>lokalId</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kommunenavn">
+            <annotation>
+              <documentation>kommunenavn</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kommunenummer" type="string">
+            <annotation>
+              <documentation>kommunenummer</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="forskriftsreferanse" type="string">
+            <annotation>
+              <documentation>forskriftsreferanse</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="ikrafttredelse" type="dateTime">
+            <annotation>
+              <documentation>ikrafttredelse</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="opphevelse" type="dateTime">
+            <annotation>
+              <documentation>opphevelse</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="oppdateringsdato" type="dateTime">
+            <annotation>
+              <documentation>oppdateringsdato</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="malemetode" type="string">
+            <annotation>
+              <documentation>malemetode</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderKunDelAvKommunen" type="boolean">
+            <annotation>
+              <documentation>gjelderKunDelAvKommunen</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderForBruktSomHelarsbolig" type="boolean">
+            <annotation>
+              <documentation>gjelderForBruktSomHelarsbolig</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderForBoligIkkeTattIBruk" type="boolean">
+            <annotation>
+              <documentation>gjelderForBoligIkkeTattIBruk</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="gjelderForUbebygdBoligtomt" type="boolean">
+            <annotation>
+              <documentation>gjelderForUbebygdBoligtomt</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="harUnntakFraSlektskapsunntak" type="boolean">
+            <annotation>
+              <documentation>harUnntakFraSlektskapsunntak</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="andreLokaleAvgrensninger" type="string">
+            <annotation>
+              <documentation>andreLokaleAvgrensninger</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BopliktområdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="v1:Bopliktområde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
